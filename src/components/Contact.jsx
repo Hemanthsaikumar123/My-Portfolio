@@ -132,22 +132,18 @@ ${formData.name}`
   ]
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
+    <section id="contact" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Contact Me
+        <div className="mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+            Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects. 
-            Let's connect and create something amazing together!
-          </p>
+          <div className="h-1 w-24 bg-gray-900 dark:bg-white rounded-full"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+          <div className="bg-white dark:bg-black border border-gray-200 dark:border-white/20 rounded-xl p-8">
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               Send me a message
             </h3>
@@ -197,7 +193,7 @@ ${formData.name}`
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-black text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
                     placeholder="Your Name"
                   />
                 </div>
@@ -212,7 +208,7 @@ ${formData.name}`
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-black text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -229,7 +225,7 @@ ${formData.name}`
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-black text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
                   placeholder="What's this about?"
                 />
               </div>
@@ -245,7 +241,7 @@ ${formData.name}`
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors resize-vertical"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-black text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors resize-vertical"
                   placeholder="Tell me about your project or just say hello!"
                 ></textarea>
               </div>
@@ -253,7 +249,7 @@ ${formData.name}`
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
+                className="w-full bg-gray-900 dark:bg-white hover:bg-gray-700 dark:hover:bg-gray-200 text-white dark:text-black font-medium py-3 px-6 rounded-lg border-2 border-gray-900 dark:border-white transition-all duration-200 flex items-center justify-center disabled:opacity-50"
               >
                 {isSubmitting ? (
                   <>
@@ -276,7 +272,7 @@ ${formData.name}`
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="bg-white dark:bg-black border border-gray-200 dark:border-white/20 rounded-xl p-8">
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
                 Connect with me
@@ -299,13 +295,13 @@ ${formData.name}`
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-3 bg-gray-100 dark:bg-gray-800 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 group"
+                    className="flex items-center p-3 bg-gray-50 dark:bg-black border border-gray-200 dark:border-white/20 rounded-lg text-gray-600 dark:text-gray-400 hover:border-gray-400 dark:hover:border-white hover:border-2 transition-all duration-200 group"
                   >
-                    <div className="w-10 h-10 flex items-center justify-center bg-white dark:bg-gray-700 rounded-lg mr-4 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/50 transition-colors">
+                    <div className="w-10 h-10 flex items-center justify-center bg-gray-100 dark:bg-white/5 rounded-lg mr-4 transition-colors">
                       {social.icon}
                     </div>
                     <div>
-                      <span className="font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      <span className="font-medium text-gray-900 dark:text-white transition-colors">
                         {social.name}
                       </span>
                       

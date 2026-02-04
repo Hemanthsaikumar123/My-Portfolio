@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
 import About from './components/About'
-import Skills from './components/Skills'
 import Projects from './components/Projects'
 // import Experience from './components/Experience'
 import Education from './components/Education'
+import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -14,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'education', 'contact']
+      const sections = ['about', 'projects', 'experience', 'education', 'certifications', 'contact']
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -36,15 +35,18 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="min-h-screen bg-black text-white">
       <Navbar activeSection={activeSection} />
       <main>
-        <Hero />
         <About />
-        <Skills />
+        <div className="border-t border-white/20 mx-auto max-w-7xl" />
         <Projects />
+        <div className="border-t border-white/20 mx-auto max-w-7xl" />
         {/* <Experience /> */}
         <Education />
+        <div className="border-t border-white/20 mx-auto max-w-7xl" />
+        <Certifications />
+        <div className="border-t border-white/20 mx-auto max-w-7xl" />
         <Contact />
       </main>
       <Footer />

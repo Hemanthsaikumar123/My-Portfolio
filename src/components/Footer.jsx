@@ -36,26 +36,26 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-100 dark:bg-black border-t border-gray-300 dark:border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div className="flex flex-col items-center justify-center text-center space-y-6">
           {/* Brand Section */}
           <div className="flex flex-col items-center justify-center text-center">
-            <h3 className="text-2xl font-bold text-blue-400 mb-4 text-center">
-              Portfolio
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Hemanth Sai Kumar
             </h3>
-            <p className="text-gray-300 mb-6 max-w-xs text-center">
+            <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-md text-center">
               Passionate full-stack developer creating innovative solutions with modern technologies. 
               Let's build something amazing together.
             </p>
-            <div className="flex justify-center space-x-4">
+            <div className="flex justify-center space-x-6">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 transform hover:scale-110"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -63,69 +63,20 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div className="flex flex-col items-center justify-center text-center">
-            <h4 className="text-lg font-semibold mb-4 text-center">Quick Links</h4>
-            <nav className="space-y-2 flex flex-col items-center justify-center">
-              {['About', 'Projects', 'Experience', 'Education', 'Contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => {
-                    const element = document.getElementById(item.toLowerCase())
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-center"
-                >
-                  {item}
-                </button>
-              ))}
-            </nav>
-          </div>
-
-          {/* Contact Info*/}
-          {/*<div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-3 text-gray-300">
-              <div className="flex items-center">
-                <svg className="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <a href="mailto:your.email@example.com" className="hover:text-blue-400 transition-colors">
-                  
-                </a>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span>San Francisco, CA</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6M8 8v10l4-2 4 2V8" />
-                </svg>
-                <span>Available for work</span>
-              </div>
-            </div>
-          </div>*/}
-        </div> 
+        </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col items-center justify-center text-center space-y-4">
-          <div className="text-gray-400 text-sm">
+        <div className="border-t border-gray-300 dark:border-gray-800 mt-8 pt-8 flex flex-col items-center justify-center text-center space-y-4">
+          <div className="text-gray-600 dark:text-gray-400 text-sm">
             © {currentYear} Koppu Hemanth Sai Kumar. All rights reserved. Built with ❤️.
           </div>
           
           <button
             onClick={scrollToTop}
-            className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-lg transition-colors duration-200"
+            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-3 rounded-lg transition-colors duration-200"
             aria-label="Back to top"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
           </button>
