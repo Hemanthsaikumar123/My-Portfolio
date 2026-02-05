@@ -111,7 +111,7 @@ const About = () => {
             />
 
             {/* Competitive Programming */}
-            <div className="hidden md:block mt-6 space-y-4">
+            <div className="mt-6 space-y-4">
               <div className="bg-gray-100 dark:bg-white/5 backdrop-blur-sm border border-gray-200 dark:border-white/10 rounded-xl p-4">
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
                   Competitive Programming
@@ -163,8 +163,8 @@ const About = () => {
                   >
                     <div className="flex items-center gap-2">
                       <div className="w-6 h-6 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-brown-600 dark:text-brown-400" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M11.257.004c-.37.01-.735.03-1.097.064-3.93.372-6.814 3.43-6.814 7.443 0 .703.095 1.382.27 2.03l.48-.09c-.149-.61-.226-1.25-.226-1.91 0-3.58 2.545-6.346 5.996-6.687 3.785-.374 7.037 2.516 7.037 6.217 0 3.425-2.787 6.212-6.212 6.212a6.166 6.166 0 0 1-3.226-.906l-.33.45a6.704 6.704 0 0 0 3.556 1.012c3.715 0 6.753-3.038 6.753-6.768 0-4.067-3.543-7.335-7.73-7.069zm-2.17 1.634a.6.6 0 0 0-.424.17 6.016 6.016 0 0 0-2.06 4.551c0 .706.125 1.383.35 2.014l.479-.09a5.464 5.464 0 0 1-.315-1.924c0-1.695.77-3.204 1.977-4.2.079-.065.168-.12.267-.164a.6.6 0 0 0-.274-1.357zm.998 1.997a.6.6 0 0 0-.365.172c-.766.697-1.247 1.704-1.247 2.83 0 .473.09.925.253 1.344l.48-.09a3.428 3.428 0 0 1-.22-1.254c0-.973.405-1.85 1.056-2.476a.6.6 0 0 0-.957-.526z"/>
+                        <svg className="w-5 h-5 text-amber-700 dark:text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 1.5c5.799 0 10.5 4.701 10.5 10.5S17.799 22.5 12 22.5 1.5 17.799 1.5 12 6.201 1.5 12 1.5zm-.7 3.15c-.3.05-.6.15-.85.35L6.8 7.6c-.5.4-.65 1-.45 1.6.2.5.65.85 1.2.9l2.45.25c.2 0 .35.15.4.35l.25 2.45c.05.55.4 1 .9 1.2.6.2 1.2.05 1.6-.45l2.6-3.65c.4-.55.4-1.3 0-1.85l-2.6-3.65c-.35-.5-.95-.75-1.55-.7zm.7 4.6c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
                         </svg>
                       </div>
                       <span className="text-xs font-medium text-gray-900 dark:text-white">CodeChef</span>
@@ -181,7 +181,7 @@ const About = () => {
                   Currently Learning
                 </h3>
                 <p className="text-xs text-gray-700 dark:text-gray-200">
-                  Always exploring new technologies and frameworks to stay ahead in the ever-evolving tech landscape.
+                  Always learning new technologies and frameworks to keep pace with the changing tech world.
                 </p>
               </div>
             </div>
