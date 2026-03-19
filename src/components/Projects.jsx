@@ -41,6 +41,32 @@ const Projects = () => {
         "PDF processing and generation",
         "Career guidance algorithms"
       ]
+    },
+    {
+      id: 4,
+      name: "Webhook Debugger",
+      description: "Webhook testing tool to inspect incoming payloads, validate signatures, and replay events for faster integration debugging.",
+      image: "/images/projects/webhook-debugger.png",
+      techStack: ["Node.js", "Express.js", "PostgreSQL", "React", "JWT"],
+      githubLink: "https://github.com/Hemanthsaikumar123/webhook-debugger",
+      keyLearnings: [
+        "Webhook signature verification",
+        "Event logging and replay workflows",
+        "Building real-time debug dashboards"
+      ]
+    },
+    {
+      id: 5,
+      name: "Project Partner Finder",
+      description: "Matchmaking platform that helps developers discover project collaborators based on skills, interests, and availability.",
+      image: "/images/projects/project-partner-finder.png",
+      techStack: ["Node.js", "Express.js", "MongoDB", "React", "TailwindCSS"],
+      githubLink: "https://github.com/Hemanthsaikumar123/Project_Partner_Finder",
+      keyLearnings: [
+        "Matching logic based on user profile metadata",
+        "Secure auth and profile management",
+        "Designing social discovery flows"
+      ]
     }
   ];
 
